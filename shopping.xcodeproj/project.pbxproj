@@ -17,6 +17,7 @@
 		D3FCA6892BDD50DC00DCA50F /* NearYouData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA6882BDD50DC00DCA50F /* NearYouData.swift */; };
 		D3FCA68B2BDD52C700DCA50F /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA68A2BDD52C700DCA50F /* FruitCardView.swift */; };
 		D3FCA68D2BDD567400DCA50F /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA68C2BDD567400DCA50F /* DetailsView.swift */; };
+		D3FCA68F2BDD572600DCA50F /* TopSellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA68E2BDD572600DCA50F /* TopSellingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D3FCA6882BDD50DC00DCA50F /* NearYouData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouData.swift; sourceTree = "<group>"; };
 		D3FCA68A2BDD52C700DCA50F /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		D3FCA68C2BDD567400DCA50F /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		D3FCA68E2BDD572600DCA50F /* TopSellingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSellingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				D3FCA6832BDD4A4300DCA50F /* HomeScreen.swift */,
 				D3FCA68A2BDD52C700DCA50F /* FruitCardView.swift */,
 				D3FCA68C2BDD567400DCA50F /* DetailsView.swift */,
+				D3FCA68E2BDD572600DCA50F /* TopSellingView.swift */,
 			);
 			path = HomeScreenViews;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				D3FCA6842BDD4A4300DCA50F /* HomeScreen.swift in Sources */,
 				D3FCA6892BDD50DC00DCA50F /* NearYouData.swift in Sources */,
+				D3FCA68F2BDD572600DCA50F /* TopSellingView.swift in Sources */,
 				D3FCA6752BDD48AD00DCA50F /* ContentView.swift in Sources */,
 				D3FCA6812BDD49FC00DCA50F /* OnboardingScreenView.swift in Sources */,
 				D3FCA68B2BDD52C700DCA50F /* FruitCardView.swift in Sources */,

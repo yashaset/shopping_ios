@@ -16,14 +16,32 @@ struct FruitCardView: View {
     
     var body: some View {
         ZStack{
-            VStack(alignment: .leading,spacing: 5){
-                Text(fruits.title.rawValue).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.system(.title3)).foregroundColor(.black)
-                Text(fruits.price).font(.system(.title3)).foregroundColor(.black).opacity(0.3)
+            VStack(alignment: .leading, spacing: 5){
+                Text(fruits.title.rawValue)
+                    .fontWeight(.bold)
+                    .font(.system(.title3))
+                    .foregroundColor(.black)
+                Text(fruits.price)
+                    .font(.system(.title3))
+                    .foregroundColor(.black.opacity(0.7))
                 Spacer()
-            }.padding(16).frame(width: 175, height: 150, alignment: .center).background(Color(fruits.color)).cornerRadius(30).padding().shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, y: 8)
+            }
+            .padding()
+            .frame(width: 175, height: 150, alignment: .center)
+            .background(Color(fruits.color))
+            .cornerRadius(30)
+            .padding()
             
-            Image(fruits.image).resizable().aspectRatio(contentMode: .fit).frame(width: 150, height: 110).offset(y: 50)
-        }.frame(width: 175, height: 150, alignment: .center)
+            ZStack{
+                Image(fruits.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 110)
+            }.offset(y: 60)
+                
+        }
+        .frame(width: 175, height: 250, alignment: .center)
+        
     }
 }
 

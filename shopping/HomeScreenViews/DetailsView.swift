@@ -7,12 +7,24 @@
 
 import SwiftUI
 
+struct RoundedRectangleShape: Shape{
+    let corners: UIRectCorner
+    let radius: CGFloat
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        
+        return Path(path.cgPath)
+    }
+}
+
 struct DetailsView: View {
+    @State var fruit: fruitTitle
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(fruit.rawValue)
     }
 }
 
 #Preview {
-    DetailsView()
+    DetailsView(fruit:.apple)
 }
